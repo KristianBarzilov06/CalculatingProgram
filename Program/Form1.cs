@@ -18,11 +18,6 @@ namespace Program
             InitializeComponent();
         }
 
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             List<double> list = textBox1.Text.Split(' ').Select(l => double.Parse(l)).ToList();
