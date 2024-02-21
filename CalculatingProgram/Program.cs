@@ -7,7 +7,7 @@
             List<double> list = Console.ReadLine().Split(' ').Select(l => double.Parse(l)).ToList();
 
             var avg = list.Average();
-            Console.WriteLine("Avarage is: " + avg);
+            Console.WriteLine($"Avarage is: {avg:f2}");
             
             list.Sort();
             double median = 0;

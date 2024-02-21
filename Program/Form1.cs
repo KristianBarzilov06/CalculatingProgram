@@ -39,7 +39,7 @@ namespace Program
                 .OrderByDescending(x => x.Count()).ThenBy(x => x.Key)
                 .ThenBy(x => (int)x.Key)
                 .FirstOrDefault();
-            
+
 
             chart1.Series.Clear();
             chart1.Series.Add("Results");
@@ -47,7 +47,7 @@ namespace Program
             chart1.Series["Results"].Points.AddXY("Median", median);
             chart1.Series["Results"].Points.AddXY("Mode", mode.Key);
 
-            MessageBox.Show($"Average: {avg}\nMedian: {median}\nMode: {mode.Key}", "Results");
+            MessageBox.Show($"Average: {avg:F2}\nMedian: {median}\nMode: {mode.Key}", "Results");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
